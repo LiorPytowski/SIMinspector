@@ -16,11 +16,11 @@ Download the .ijm file then drag-and drop it in the FIJI bar. Then press "Run" o
 
 
 ## To do 
-_ Create an update site so that user can install and update automatically the macros.
-
 _Improve the input dialogs.
 
 _Provide sample images to run the scripts.
+
+_ Create an update site so that user can install and update automatically the macros (?)
 
 
 ## FAQ
