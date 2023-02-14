@@ -80,7 +80,7 @@ extend_and_merge <- function(ColocResults, StatisticsOfLabelmap_1, StatisticsOfL
 
 for (i in 1:nrow(comparison_suffixes)) {
   suffix <- paste(comparison_suffixes[i, "ChannelA"], "vs", comparison_suffixes[i, "ChannelB"], sep="")
-  assign(paste("ColocResults_", suffix, "extended", sep=""),
+  assign(paste("ColocResults_", suffix, "_extended", sep=""),
          extend_and_merge(get(paste("ColocResults_", suffix, sep="")),
                           get(paste("StatisticsOfLabelmap_short_", comparison_suffixes[i, "ChannelA"], sep="")),
                           get(paste("StatisticsOfLabelmap_short_", comparison_suffixes[i, "ChannelB"], sep="")),

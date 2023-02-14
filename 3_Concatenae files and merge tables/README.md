@@ -24,5 +24,10 @@ All distance measurements are based on the geometric centers except for the meas
 This was done so that a copy of the R scrip remains with the data. This also means that if you change or add commands to the script for that specific experiment (e.g.: plots and statistics) then it is there with the actual data rather than in another directory
 
 
+### Log
+V7: Order of columns amended so that  ChannelA comes before ChannelB in ColocResults_extended
 
+v6: no longer the user needs to input the comparisons made in macro_2 (e.g.: C2vsC1).
+
+v5: concatenation requires the user to input the comparisons made in macro_2 (e.g.: C2vsC1).
 
