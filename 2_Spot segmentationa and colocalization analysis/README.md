@@ -7,7 +7,7 @@ Run the macro with the default settings and make sure to select the options to p
 
 Once you have that inspect the images and check whether the parameters seem correct. If not, then try different thresholds for example then re-run the macro with the newly selected thresholds.
 #### What are the units of the measurement outputs?
-Measurements in “StatisticsOfLabelmap” files are not calibrated.
+Measurements in “StatisticsOfLabelmap” files are **not** calibrated.
 
 Measurements in “AdjacencyResults” and “ColocResults” are calibrated meaning that they use the same units present in the properties of the image. (The menu path to check image properties in Fiji is: Image › Properties...).
 
