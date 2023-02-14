@@ -4,7 +4,7 @@ This macro will assume that the largest object in the image is the nucleus that 
 ## How does this macro work?
 When running the macro the first step is to populate the dialog:
 
-<img src="https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/blob/main/Images%20for%20wiki/Macro1_dialog.png" alt="DialogMacro1" width="500" height="600">
+<img src="https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/blob/main/Images%20for%20wiki/Macro1_dialog.png" alt="DialogMacro1" width="550" height="650">
 
 You need to choose the directory that contains the images to mask. (No other files should be in that directory!)
 
