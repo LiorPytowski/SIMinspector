@@ -13,7 +13,7 @@ Run the script (select the whole script [CTRL + A]  then run [CTRL + Enter])
 ## FAQ
 
 #### What are the units of the measurement outputs?
-Measurements in “StatisticsOfLabelmap” files are not calibrated.
+Measurements in “StatisticsOfLabelmap” files are **not** calibrated.
 
 Measurements in “AdjacencyResults” and “ColocResults” are calibrated meaning that they use the same units present in the properties of the image. (The menu path to check image properties in Fiji is: Image › Properties...).
 
