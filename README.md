@@ -20,6 +20,8 @@ _ Create an update site so that user can install and update automatically the ma
 
 _Improve the input dialogs.
 
+_Provide sample images to run the scripts.
+
 
 ## FAQ
 ### Why are the macros written in ImageJ macro language?
