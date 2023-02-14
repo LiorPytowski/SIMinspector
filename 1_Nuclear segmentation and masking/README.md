@@ -1,6 +1,6 @@
 The aim of this macro is to segment the nucleus, mask it, crop the image then save it.
 ## Important
-This macro will assume that the largest object in the image is the nucleus that needs to be saved. If there is more that one nucleus per image then only the largest one will be kept. If you have mor than one nucleus then simply either loose one or separate them before running the macro.
+This macro will assume that the largest object in the image is the nucleus that needs to be saved. If there is more that one nucleus per image then only the largest one will be kept. If you have more than one nucleus then simply either loose one or separate them before running the macro.
 ## How does this macro work?
 When running the macro the first step is to populate the dialog:
 
