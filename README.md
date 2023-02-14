@@ -13,6 +13,8 @@ More details about each script is provided by following the links above.
 Download the .ijm files then drag-and drop it in the FIJI bar. Then press "Run" on the bottom of the script editor.
 (There are other ways of doing this. This is just one of them.)
 
+## Dependencies
+[coming soon]
 
 ## To do 
 _Improve the input dialogs.
