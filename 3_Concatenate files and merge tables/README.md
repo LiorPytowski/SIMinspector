@@ -1,4 +1,4 @@
-The aim of this R script is to concatenate all the files created by the macro_2
+The aim of this R script is to concatenate all the files created by the macro that measures colocalization.
 ## How to use?
 Place the script in the folder containing the output of the macro_2.  
 (This is the folder containing the AdjacencyResults”, “ColocResults and “StatisticsOfLabelmap” files)
