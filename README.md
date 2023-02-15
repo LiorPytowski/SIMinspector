@@ -48,7 +48,7 @@ This language was chosen because it is the easiest to edit by non-coding experts
 No macro is perfect. And no macro is suited for all images. You may need to change commands in the macros. Hopefully this is not necessary, but it may happen.
 
 ## Acknowledgement
-These macros relies heavily on the CLIJ library. Therefore this work would have been not possible in it's current form without the work of Robert Haase and colleagues:
+These macros rely heavily on the CLIJ library. Therefore this work would have been not possible in it's current form without the work of Robert Haase and colleagues:
 1. Haase, R. et al. CLIJ: GPU-accelerated image processing for everyone. Nat Methods 17, 5–6 (2020).
 2. Vorkel, D. & Haase, R. GPU-accelerating ImageJ Macro image processing workflows using CLIJ. arXiv:2008.11799 [cs, q-bio] (2020).
 3. Haase, R. et al. Interactive design of GPU-accelerated Image Data Flow Graphs and cross-platform deployment using multi-lingual code generation. 2020.11.19.386565 https://www.biorxiv.org/content/10.1101/2020.11.19.386565v1 (2020) doi:10.1101/2020.11.19.386565.
@@ -59,7 +59,7 @@ It also relies on DiAna:
 And MorphoLibJ:
 1. Legland, D., Arganda-Carreras, I. & Andrey, P. MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ. Bioinformatics 32, 3532–3534 (2016).
 
-And finally but not least, of course:
+And finally but not least:
 
 1. Schindelin, J. et al. Fiji: an open-source platform for biological-image analysis. Nature Methods 9, 676 (2012).
 2. Schindelin, J., Rueden, C. T., Hiner, M. C. & Eliceiri, K. W. The ImageJ ecosystem: An open platform for biomedical image analysis. Mol. Reprod. Dev. 82, 518–529 (2015).

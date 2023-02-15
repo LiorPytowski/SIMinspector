@@ -9,4 +9,4 @@ For DiAna to worl you also need the `3D ImageJ Suite`, `Java8` and `ImageScience
 
 ### License
 
-GPL distribution (see 3). Sources for plugins are available freely.
+GPL distribution. Sources for plugins are available freely.
