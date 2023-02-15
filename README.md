@@ -2,26 +2,37 @@ This is a temporary repository for nuclear foci segmentation & coloc analysis ma
 
 
 ## List of scripts
-1) a [macro](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/1_Nuclear%20segmentation%20and%20masking) designed to segment nuclei and exclude all foci in cytoplasm.
-2) a [macro](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/2_Spot%20segmentationa%20and%20colocalization%20analysis) designed to segment foci in multiple channels then measure colocalization on two chosen channels.
-3) an [R script](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/3_Concatenae%20files%20and%20merge%20tables) designed to concatenate all the outputs of the second macro, and retrieve the volume of objects that do colocalize.
+1) A [macro](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/1_Nuclear%20segmentation%20and%20masking) designed to segment nuclei and exclude all foci outside nucleus.
+2) A [macro](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/2_Spot%20segmentationa%20and%20colocalization%20analysis) designed to segment foci in multiple channels then measure colocalization on two chosen channels.
+3) An [R script](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/3_Concatenae%20files%20and%20merge%20tables) designed to concatenate all the outputs of the second macro, and retrieve the volume of objects that do colocalize.
 
 More details about each script is provided by following the links above.
 
 
 ## How to use the macros
-Download the .ijm files then drag-and drop it in the FIJI bar. Then press "Run" on the bottom of the script editor.
+Download the .ijm files then drag-and drop it in the FIJI bar. Then press "Run" on the bottom of the script editor.  
 (There are other ways of doing this. This is just one of them.)
 
 ## Dependencies
-[coming soon]
+:heavy_exclamation_mark: The macros need certain updates sites to run.
 
-## To do 
-_Improve the input dialogs.
+They are:
+* 3D ImageJ Suite
+* Java8
+* CLIJ     
+* CLIJ2` 
+* clijx-assistant` 
+* clijx-assistant-extensions
+* IJPB-plugins
+* ImageScience
 
-_Provide sample images to run the scripts.
+See this [tutorial to learn how to add update sites to ImageJ](https://imagej.net/update-sites/following).
 
-_ Create an update site so that user can install and update automatically the macros (?)
+
+## To do
+* Improve the input dialogs.
+* Provide sample images to run the scripts.
+* Create an update site so that user can install and update automatically the macros (?)
 
 
 ## FAQ
