@@ -14,9 +14,9 @@ Download the .ijm files then drag-and drop it in the FIJI bar. Then press "Run" 
 (There are other ways of doing this. This is just one of them.)
 
 ## Dependencies
-:heavy_exclamation_mark: The macros need certain updates sites to run.
+:heavy_exclamation_mark: The macros need certain updates sites plus a manually installed plugin to run.
 
-They are:
+The update sites are:
 * 3D ImageJ Suite
 * Java8
 * CLIJ     
@@ -27,6 +27,8 @@ They are:
 * ImageScience
 
 See this [tutorial to learn how to add update sites to ImageJ](https://imagej.net/update-sites/following).
+
+Additionally please install `DiAna 1.50`
 
 
 ## To do
