@@ -71,13 +71,17 @@ extend_and_merge <- function(ColocResults, StatisticsOfLabelmap_1, StatisticsOfL
   ColocResults_extended_final <- merge(ColocResults_extended_final, StatisticsOfLabelmap_2,
                                        by.x = c("ImageFile", "LabelB"), by.y = c("ImageFile", "IDENTIFIER"),
                                        suffix = c(suffix1, suffix2))
+  
+  ColocResults_extended_final <- ColocResults_extended_final[,c(1,3,2:ncol(ColocResults_extended_final))] # this will simply change the order of the columns so that ChannelA comes before ChannelB
+  ColocResults_extended_final <- select(ColocResults_extended_final, -c("LabelA.1"))
+  
   return(ColocResults_extended_final)
 }
 
 
 for (i in 1:nrow(comparison_suffixes)) {
   suffix <- paste(comparison_suffixes[i, "ChannelA"], "vs", comparison_suffixes[i, "ChannelB"], sep="")
-  assign(paste("ColocResults_", suffix, "extended", sep=""),
+  assign(paste("ColocResults_", suffix, "_extended", sep=""),
          extend_and_merge(get(paste("ColocResults_", suffix, sep="")),
                           get(paste("StatisticsOfLabelmap_short_", comparison_suffixes[i, "ChannelA"], sep="")),
                           get(paste("StatisticsOfLabelmap_short_", comparison_suffixes[i, "ChannelB"], sep="")),
