@@ -2,8 +2,8 @@ This is a repository for nuclear foci segmentation & coloc analysis macros and R
 
 ## List of scripts
 1) A [macro](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/1_Nuclear%20segmentation%20and%20masking) designed to segment nuclei and exclude all foci outside nucleus.
-2) A [macro](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/2_Spot%20segmentationa%20and%20colocalization%20analysis) designed to segment foci in multiple channels then measure colocalization on two chosen channels.
-3) An [R script](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/3_Concatenae%20files%20and%20merge%20tables) designed to concatenate all the outputs of the second macro, and retrieve the volume of objects that do colocalize.
+2) A [macro](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/2_Spot%20segmentation%20and%20colocalization%20analysis) designed to segment foci in multiple channels then measure colocalization on two chosen channels.
+3) An [R script](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/3_Concatenate%20files%20and%20merge%20tables) designed to concatenate all the outputs of the second macro, and retrieve the volume of objects that do colocalize.
 
 More details about each script is provided by following the links above.
 
