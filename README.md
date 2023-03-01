@@ -17,7 +17,7 @@ Download the .ijm files then drag-and drop it in the FIJI bar. Then press "Run" 
 The update sites are:
 * 3D ImageJ Suite
 * Java8
-* CLIJ     
+* CLIJ
 * CLIJ2
 * clijx-assistant
 * clijx-assistant-extensions
