@@ -15,7 +15,7 @@ Measurements in “AdjacencyResults” and “ColocResults” are calibrated mea
 All distance measurements are based on the geometric centers except for the measurements in the “AdjacencyResultsCentersofMass” files that use the centers of mass.
 
 #### Why did we choose to place the R file in the folder we need to process instead of setting the working directory?
-This was done so that a copy of the R scrip remains with the data. This also means that if you change or add commands to the script for that specific experiment (e.g.: plots and statistics) then it is there with the actual data rather than in another directory
+This was done so that a copy of the R scrip remains with the data. This also means that if you change or add commands to the script for that specific experiment (e.g.: statistics and plots) then it is there with the actual data rather than in another directory.
 
 
 ## How does this scrip work?
