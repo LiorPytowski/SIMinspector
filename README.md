@@ -39,7 +39,7 @@ To install please download the `.jar` file the place it in the `plugins` folder 
 ## FAQ
 #### How do I download files from here?
 You can download the files from the last [release](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/releases).  
-Alternatively, have a look at [this](https://blog.hubspot.com/website/download-from-github?hubs_content=blog.hubspot.com%2Fwebsite%2Fdownload-from-github&hubs_content-cta=downloading%20a%20file) 
+Alternatively, have a look at [this](https://blog.hubspot.com/website/download-from-github?hubs_content=blog.hubspot.com%2Fwebsite%2Fdownload-from-github&hubs_content-cta=downloading%20a%20file).
 
 #### Why are the macros written in ImageJ macro language?
 This language was chosen because it is the easiest to edit by non-coding experts.
