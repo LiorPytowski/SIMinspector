@@ -94,6 +94,8 @@ They are:
 		* MAX_DISTANCE_TO_CENTROID
 		* MAX_MEAN_DISTANCE_TO_CENTROID_RATIO
 
+#### :star: Fantastic, I now have hundreds of files. What do I do next?
+The [R script](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/3_Concatenate%20files%20and%20merge%20tables) will concatenate all the files together so that you can do your favourite statistical analysis.
 
 ### TO DO
 An option to run the macro without making the stack Isotropic. This will make the process require less GPU memory (or RAM) but it comes at the cost of a potential lower segmentation quality.
