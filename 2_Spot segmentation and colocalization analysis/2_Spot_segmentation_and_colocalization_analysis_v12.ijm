@@ -206,7 +206,7 @@ if (print_log == true ) {
 
 
 #@ String(value=" ", visibility="MESSAGE") TextP11
-#@ String(value="This macro requires the updates sites 3D ImageJ Suite, Java8, CLIJ and CLIJ2, IJPB-plugins, clijx-assistant-extensions, DiAna 1.50  to run.", visibility="MESSAGE") TextP12
+#@ String(value="This macro requires the updates sites 3D ImageJ Suite, Java8, CLIJ and CLIJ2, IJPB-plugins, clijx-assistant-extensions and DiAna 1.50 to run.", visibility="MESSAGE") TextP12
 #@ String(value="Check their documentation to see how to cite.", visibility="MESSAGE") TextP13
 
 #@ String(value=" ", visibility="MESSAGE") TextP14
