@@ -19,8 +19,17 @@ This was done so that a copy of the R scrip remains with the data. This also mea
 
 
 ## How does this scrip work?
-[Coming soon, stay tuned]
+In order, this script essentially 
+* Sets the directory to the location the R file is.
+* Loads packages
+* Detects what comparisons were made in macro 2 (e.g. "C2vsC3" or "C2vsC1")
+* Create a list of var_names based on the input suffixes
+* Reads and concatenates all the csv files into a separate data frame
+* Joins the "ColocResults" data frame with the "StatisticsOfLabelmap" (only select columns) data frame based on "ImageFile" and "Label" columns
+* Saves all the newly created dataframes in a subfolder called "Master_Files". (The subfolder is placed in the directory containing all the individual .csv files)
 
+### To do
+* change read_csv into a faster implementation.
 
 ## Log
 V7: Order of columns amended so that  ChannelA comes before ChannelB in ColocResults_extended
