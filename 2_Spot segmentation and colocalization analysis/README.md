@@ -54,8 +54,10 @@ They are:
 
 * *Filename*@ColocResults_C2vsC1.csv
 	* This will have the following measurements:
-		* OverlapVolume(pxl); ColocFromAvolume
-		* ColocFromBvolume ;ColocFromABvolume
+		* OverlapVolume(pxl)
+		* ColocFromAvolume
+		* ColocFromBvolume
+		* ColocFromABvolume
 		* Dist CenterA-CenterB
 		* Dist min CenterA-EdgeB
 		* Dist min EdgeA-CenterB
