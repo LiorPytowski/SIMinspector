@@ -22,4 +22,4 @@ Final options:
 * Save log with settings: This will save a small text file with the settings selected in the dialog.
 ## Overview of the workflow:
 
-<img src="https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/blob/main/Images%20for%20wiki/Macro1_workflow_diagram.png" alt="MacroWorkflow" width="454" height="1243">
+<img src="https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/blob/main/Images%20for%20wiki/Macro1_workflow_diagram.png" alt="MacroWorkflow" width="454" height="1303">
