@@ -95,7 +95,7 @@ if (print_log == true ) {
 	print("Border around nucleus: " + border);
 
 	selectWindow("Log"); 
-	save(Output_directory + File.separator + ".Log.txt");
+	save(Output_directory + File.separator + "Log.txt");
 	}
 
 
