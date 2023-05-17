@@ -71,7 +71,7 @@ for (i = 0; i < lengthOf(filelist); i++) {
 	// Segment channel B
 	selectWindow(input_image);
   	run("Duplicate...", "title=InputC" + ChannelB + "  duplicate channels=&ChannelB");
-  		// Set some paraameters then segment using function "segment_spots_function"
+  		// Set some parameters then segment using function "segment_spots_function"
 	  	Threshold_Method = Threshold_Method_ChannelB;
 	  	Maxima_Radius = Maxima_Radius_ChannelB;
 	  	Erosion_Radius = Erosion_Radius_ChannelB;
@@ -149,7 +149,8 @@ for (i = 0; i < lengthOf(filelist); i++) {
 	run("Collect Garbage");
 	Ext.CLIJ2_clear();
 
-}}
+	}
+}
 
 
 
@@ -164,14 +165,14 @@ if (print_log == true ) {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Below the dialog is defined
-#@ File(style="directory") Input_Directory
-#@ File(style="directory") Output_Directory
+#@ File(label="Input directory", style="directory") Input_Directory
+#@ File(label="Output directory", style="directory") Output_Directory
 
 #@ Integer(label="Channel A", value = 1) ChannelA
 #@ Integer(label="Channel B", value = 2) ChannelB
 
-#@ String(label="Segmentation algorithm Channel A", choices={"Default", "Huang", "Intermodes", "IsoData", "IJ_IsoData", "Li", "MaxEntropy", "Mean", "MinError", "Minimum", "Moments", "Otsu", "Percentile", "RenyiEntropy", "Shanbhag", "Triangle", "Yen"}, style="list") Threshold_Method_ChannelA
-#@ String(label="Segmentation algorithm Channel B", choices={"Default", "Huang", "Intermodes", "IsoData", "IJ_IsoData", "Li", "MaxEntropy", "Mean", "MinError", "Minimum", "Moments", "Otsu", "Percentile", "RenyiEntropy", "Shanbhag", "Triangle", "Yen"}, style="list") Threshold_Method_ChannelB
+#@ String(label="Segmentation algorithm channel A", choices={"Default", "Huang", "Intermodes", "IsoData", "IJ_IsoData", "Li", "MaxEntropy", "Mean", "MinError", "Minimum", "Moments", "Otsu", "Percentile", "RenyiEntropy", "Shanbhag", "Triangle", "Yen"}, style="list") Threshold_Method_ChannelA
+#@ String(label="Segmentation algorithm channel B", choices={"Default", "Huang", "Intermodes", "IsoData", "IJ_IsoData", "Li", "MaxEntropy", "Mean", "MinError", "Minimum", "Moments", "Otsu", "Percentile", "RenyiEntropy", "Shanbhag", "Triangle", "Yen"}, style="list") Threshold_Method_ChannelB
 
 #@ String(value=" ", visibility="MESSAGE") TextP1
 #@ String(value="Min and Max spot volume. In voxels. In original stack.", visibility="MESSAGE") hints
@@ -194,12 +195,12 @@ if (print_log == true ) {
 #@ String(value="Advanced options:", visibility="MESSAGE") Text6
 
 #@ String(value="XYZ Radius for maxima detection. Default is 2 voxels. The lower the value the more watersheded objects there are.", visibility="MESSAGE") Text7
-#@ Integer(label="Maxima Radius Channel A", value = 2) Maxima_Radius_ChannelA
-#@ Integer(label="Maxima Radius Channel B", value = 2) Maxima_Radius_ChannelB
+#@ Integer(label="Maxima radius channel A", value = 2) Maxima_Radius_ChannelA
+#@ Integer(label="Maxima radius channel B", value = 2) Maxima_Radius_ChannelB
 
-#@ String(value="Label Erosion in isotropic stack. Default is 0 voxel. Usually [0-3].", visibility="MESSAGE") Text8
-#@ Integer(label="Label erosion Channel A", value = 0) Erosion_Radius_ChannelA
-#@ Integer(label="Label erosion Channel B", value = 0) Erosion_Radius_ChannelB
+#@ String(value="Label erosion in isotropic stack. Default is 0 voxel. Usually [0-3].", visibility="MESSAGE") Text8
+#@ Integer(label="Label erosion channel A", value = 0) Erosion_Radius_ChannelA
+#@ Integer(label="Label erosion channel B", value = 0) Erosion_Radius_ChannelB
 
 #@ String(value=" ", visibility="MESSAGE") TextP9
 #@ Boolean(label="Save a log with the settings used to run this macro?") print_log

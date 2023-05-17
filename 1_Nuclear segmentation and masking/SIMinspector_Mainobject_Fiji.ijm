@@ -2,18 +2,19 @@ run("Fresh Start");
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
-filelist = getFileList(Input_Directory) 
+filelist = getFileList(Input_directory) 
 for (i = 0; i < lengthOf(filelist); i++) {
     if (endsWith(filelist[i], ".tif")) { 
-        open(Input_Directory + File.separator + filelist[i]);
-					
-		Input_image=getTitle(); //identify loaded 4 channel 3D SIM iamge
+        open(Input_directory + File.separator + filelist[i]);
+		
+		// Identify multi-channel input, extract Channel_for_mask_creation then push to GPU
+		Input_image = getTitle(); 
 		getDimensions(width, height, channels, slices, frames);
 		run("Duplicate...", "duplicate channels=&Channel_for_mask_creation");
 		
 		image_1 = getTitle();
-		Ext.CLIJ2_pushCurrentZStack(image_1);
-		Ext.CLIJ2_pushCurrentZStack(Input_image);
+		Ext.CLIJ2_pushCurrentZStack(image_1); // This is only the channel to make the masks
+		Ext.CLIJ2_pushCurrentZStack(Input_image); // This is the whole input multi-channel image
 		
 		// Gaussian Blur3D
 		sigma_x = Gaussian_blur;
@@ -74,7 +75,7 @@ for (i = 0; i < lengthOf(filelist); i++) {
 				} 
 				
 		// Save and close images		
-		saveAs("Tiff", Output_Directory + File.separator + Input_image);  
+		saveAs("Tiff", Output_directory + File.separator + Input_image);  
 		run("Close All");
 		Ext.CLIJ2_clear();
 		}
@@ -86,33 +87,33 @@ if (print_log == true ) {
 	getDateAndTime(year, month, dayOfWeek, dayOfMonth, hour, minute, second, msec);
 	print("\\Clear");
 	print("Macro run on (YYYY/MM/DD): " + year + "/" + month+1 + "/" + dayOfMonth);
-	print("Input_Directory: " + Input_Directory);
-	print("Output_Directory: " + Output_Directory);
+	print("Input_directory: " + Input_directory);
+	print("Output_directory: " + Output_directory);
 	print("Channel for mask creation: " + Channel_for_mask_creation);
 	print("Gaussian blur sigma before thresholding: " + Gaussian_blur);
 	print("Threshold method: " + Threshold_Method);
 	print("Border around nucleus: " + border);
 
 	selectWindow("Log"); 
-	save(Output_Directory + File.separator + ".Log.txt");
+	save(Output_directory + File.separator + ".Log.txt");
 	}
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Below the dialog is defined
-#@ File(style="directory") Input_Directory
-#@ File(style="directory") Output_Directory
+#@ File(label="Input directory", style="directory") Input_directory
+#@ File(label="Output directory", style="directory") Output_directory
 
 #@ Integer(label="Channel for mask creation", value = 1) Channel_for_mask_creation
 
-#@ String(value="A gaussian blur is used to smooth the image in XY before thresholding. Default is 10.", visibility="MESSAGE") TextP1
+#@ String(value="A gaussian blur is used to smoothen the image in XY before thresholding (default is 10).", visibility="MESSAGE") TextP1
 #@ Integer(label="Gaussian blur sigma before thresholding", value = 10) Gaussian_blur
 
-#@ String(value="Threshold method to create the mask. Default is Huang", visibility="MESSAGE") TextP2
+#@ String(value="Threshold method to create the mask (default is Huang).", visibility="MESSAGE") TextP2
 #@ String(label="Threshold method", choices={"Huang", "Default", "Intermodes", "IsoData", "IJ_IsoData", "Li", "MaxEntropy", "Mean", "MinError", "Minimum", "Moments", "Otsu", "Percentile", "RenyiEntropy", "Shanbhag", "Triangle", "Yen"}, style="list") Threshold_Method
 
-#@ String(value="Space left around the nucleus after croping. In calibrated units", visibility="MESSAGE") TextP4
+#@ String(value="Space left around the nucleus after croping (in calibrated units).", visibility="MESSAGE") TextP4
 #@ Double(label="Border around nucleus", value = 0) border
 
 #@ String(value=" ", visibility="MESSAGE") TextP5
