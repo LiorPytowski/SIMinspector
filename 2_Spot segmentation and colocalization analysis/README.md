@@ -36,7 +36,7 @@ Advanced options:
 
 ### Additional details regarding the workflow:
 
-<img src="https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/blob/main/Images%20for%20wiki/Macro2_workflow_diagram.png" alt="MacroWorkflow" width="871" height="1084">
+<img src="https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/blob/main/Images%20for%20wiki/Macro2_workflow_diagram.png" alt="MacroWorkflow" width="862" height="1079">
 
 ### Outputs:
 For each image 5 files are generated.  
