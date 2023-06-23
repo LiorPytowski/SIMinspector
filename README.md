@@ -26,7 +26,7 @@ The update sites are:
 
 See this [tutorial to learn how to add update sites to ImageJ](https://imagej.net/update-sites/following).
 
-:heavy_exclamation_mark:  Additionally please install `DiAna 1.50`. The latest version of DiAna can be found [here](https://imagej.net/plugins/distance-analysis#installation). An archived copy of `DiAna 1.50` is also in [this repository](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/DiAna%1.50).
+:heavy_exclamation_mark:  Additionally please install `DiAna 1.50`. The latest version of DiAna can be found [here](https://imagej.net/plugins/distance-analysis#installation). An archived copy of `DiAna 1.50` is also in [this repository](https://github.com/LiorPytowski/Nuclear-Foci-Analysis-Macros/tree/main/DiAna 1.50).
 To install please download the `.jar` file the place it in the `plugins` folder of your fiji installation. (In Windows, simply navigate with the File Explorer; in Mac, right click the FIJI app then select `Show Package Contents` then navigate to the plugins folder)
 
 
