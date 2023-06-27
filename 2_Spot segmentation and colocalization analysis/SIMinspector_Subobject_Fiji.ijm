@@ -58,7 +58,7 @@ for (i = 0; i < lengthOf(filelist); i++) {
 					CMz = getResult("MASS_CENTER_Z", r);
 					id_pix = getResult("IDENTIFIER", r);
 					
-					setSlice(CMz);
+					setSlice(CMz + 1); //we add 1 because CLIJ counts starting from 0 but Imagej from 1
 					setPixel(CMx, CMy, id_pix);
 					}
 					run("glasbey_on_dark");
@@ -104,7 +104,7 @@ for (i = 0; i < lengthOf(filelist); i++) {
 					CMz = getResult("MASS_CENTER_Z", r);
 					id_pix = getResult("IDENTIFIER", r);
 					
-					setSlice(CMz);
+					setSlice(CMz + 1); //we add 1 because CLIJ counts starting from 0 but Imagej from 1
 					setPixel(CMx, CMy, id_pix);
 					}
 					run("glasbey_on_dark");
